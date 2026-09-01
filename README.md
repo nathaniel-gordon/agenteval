@@ -3,9 +3,9 @@
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-4c72b0.svg?style=flat-square)](LICENSE)
-[![Python: 3.11+](https://img.shields.io/badge/Python-3.11%2B-1e2327.svg?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![Python: 3.11+](https://img.shields.io/badge/Python-3.11→2B-1e2327.svg?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![Agentic AI: Trajectory](https://img.shields.io/badge/Agentic_AI-Trajectory_Grading-4c72b0?style=flat-square)](.)
-[![Deterministic: Offline](https://img.shields.io/badge/Evaluation-Deterministic_%26_Offline-22c55e?style=flat-square)](.)
+[![Deterministic: Offline](https://img.shields.io/badge/Evaluation-Deterministic_→26_Offline-22c55e?style=flat-square)](.)
 [![UI: Streamlit](https://img.shields.io/badge/UI-Streamlit_Inspector-ff4b4b?style=flat-square&logo=streamlit&logoColor=white)](.)
 [![Author: Nathaniel Gordon](https://img.shields.io/badge/Author-Nathaniel_Gordon-4c72b0?style=flat-square&logo=github)](https://github.com/nathaniel-gordon)
 
@@ -100,9 +100,9 @@ A robust evaluation suite must discriminate between high-performing and defectiv
 
 | Agent Profile | Success Rate | Tool $F_1$ | Step Efficiency | Mean Cost / Task | Offline? |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| **`heuristic`** (Optimal Reference) | **100% (1.00)** | **1.00** | **1.00** | **$0.00** | ✅ Yes |
-| **`naive`** (Flawed Baseline) | **58.3% (0.58)** | **0.59** | **0.75** | **$0.00** | ✅ Yes |
-| **`claude`** (Live Tool-Calling Agent) | **91.7% (0.92)** | **0.94** | **0.88** | **$0.014** | 🔑 Key required |
+| **`heuristic`** (Optimal Reference) | **100→ (1.00)** | **1.00** | **1.00** | **$0.00** | ✅ Yes |
+| **`naive`** (Flawed Baseline) | **58.3→ (0.58)** | **0.59** | **0.75** | **$0.00** | ✅ Yes |
+| **`claude`** (Live Tool-Calling Agent) | **91.7→ (0.92)** | **0.94** | **0.88** | **$0.014** | 🔑 Key required |
 
 ```
 $ ageval --agent naive
@@ -133,7 +133,7 @@ sequenceDiagram
     participant E as Deterministic Tool World
     participant S as Trajectory Scorer
 
-    H->>A: Execute Task Prompt (e.g. "Total cost of 3 widgets & 2 gadgets?")
+    H->>A: Execute Task Prompt (e.g. "Total cost of 3 widgets & 2 gadgets—)
     loop Multi-Step Trajectory
         A->>E: Call tool: catalog_lookup("widget")
         E-->>A: Return: {"price": 12.50, "stock": 40}
@@ -163,7 +163,7 @@ The harness ships with 12 structured tasks testing distinct reasoning patterns:
 Each benchmark entry defines:
 ```yaml
 id: cost_01
-prompt: "What is the total price for 3 widgets and 2 gadgets?"
+prompt: "What is the total price for 3 widgets and 2 gadgets—
 gold: "75.5"
 expected_tools:
   - catalog_lookup
@@ -251,14 +251,14 @@ agenteval/
 
 ## 👤 Author & Contact
 
-<table width="100%">
+<table width="100→">
 <tr>
-<td width="20%" align="center">
-  <img src="https://avatars.githubusercontent.com/u/318755903?v=4" width="120px" style="border-radius: 50%;" alt="Nathaniel Gordon" /><br/>
+<td width="20→" align="center">
+  <img src="https://avatars.githubusercontent.com/u/318755903?v=4" width="120px" style="border-radius: 50→;" alt="Nathaniel Gordon" /><br/>
   <strong>Nathaniel Gordon</strong><br/>
   <sub>Senior AI & ML Engineer</sub>
 </td>
-<td width="80%">
+<td width="80→">
 
 **Specializations**: Agentic AI Architectures · Multi-Agent Orchestration · RAG Systems · Risk & Decision Intelligence · Production MLOps
 
