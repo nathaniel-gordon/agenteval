@@ -1,0 +1,15 @@
+{
+  "name": "agenteval",
+  "category": "Agentic AI & Evaluation Harness",
+  "architecture": "Agent benchmark evaluation harness measuring task success, tool-call F1, step efficiency, and cost tracking with trajectory inspection",
+  "interface": "CLI — python -m ageval.harness [--agent heuristic|naive|claude] [--limit N]",
+  "testing": "6-test pytest suite covering scoring, trajectory verification, and agent execution (pytest tests -q)",
+  "demo_cmd": "python -m ageval.harness --agent heuristic",
+  "test_cmd": "pytest tests -q",
+  "entry_points": [
+    "src/ageval/harness.py",
+    "src/ageval/agent.py",
+    "src/ageval/scorer.py",
+    "src/ageval/env.py"
+  ]
+}
